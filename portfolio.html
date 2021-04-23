@@ -9,36 +9,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <link rel="stylesheet"  href="./css/style.css"/>
 </head>
 
 <body>
   <!--Шапка-->
-  <header class="line-border">
+  <header class="page-header">
     <div class="container">
-      <nav class="logo-link">
-        <a class="logo" href="./index.html">
-          <span class="web-part">Web</span><span class="web-sec-part">Studio</span></a>
-        <ul class="site-nav">
-          <li class="item">
-            <a class="link-nav" href="./index.html">Студия</a>
+      <nav class="site-nav">
+        <a class="site-nav__logo" href="./index.html">
+          <span class="logo__word">Web</span><span class="logo__secword">Studio</span></a>
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a href="./index.html" class="site-nav__link">Студия</a>
           </li>
-          <li class="item">
-            <a class="link-nav current page" href="./portfolio.html">Портфолио</a>
+          <li class="site-nav__item">
+            <a href="./portfolio.html" class="site-nav__link site-nav__link--current site-nav__link--page">Портфолио</a>
           </li>
-          <li class="item">
-            <a class="link-nav" href="/Контакты">Контакты</a>
+          <li class="site-nav__item">
+            <a href="/Контакты" class="site-nav__link">Контакты</a>
           </li>
         </ul>
-        <ul class="header-link">
-          <li class="nav-contacts">
-            <a href="mailto:info@devstudio.com" class="link"><svg class="icon-envelope" width="16" height="12">
+        <ul class="site-nav__contacts">
+          <li class="site-nav__contacts--list">
+            <a href="mailto:info@devstudio.com" class="site-nav__link"><svg class="site-nav__icon--envelope" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>info@devstudio.com</a>
           </li>
-          <li class="nav-contacts">
-            <a href="tel:+380961111111" class="link">
-              <svg class="icon-smartphone" width="12" height="16">
+          <li class="site-nav__contacts--list">
+            <a href="tel:+380961111111" class="site-nav__link">
+              <svg class="site-nav__icon--smartphone" width="12" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>+38 096 111 11 11</a>
           </li>
@@ -48,33 +49,33 @@
   </header>
   <!--Кнопки-->
   <main>
-    <section class="section-btn">
+    <section class="buttons">
       <div class="container">
-        <h1 class="list">Блок кнопок</h1>
-        <ul class="links">
-          <li class="link-btn">
-            <button class="button-port" type="button">Все</button>
+        <h1 class="buttons__block">Блок кнопок</h1>
+        <ul class="buttons__list">
+          <li class="buttons__link">
+            <button class="buttons__btn" type="button">Все</button>
           </li>
-          <li class="link-btn">
-            <button class="button-port" type="button">Веб-сайты</button>
+          <li class="buttons__link">
+            <button class="buttons__btn" type="button">Веб-сайты</button>
           </li>
-          <li class="link-btn">
-            <button class="button-port" type="button">Приложение</button>
+          <li class="buttons__link">
+            <button class="buttons__btn" type="button">Приложение</button>
           </li>
-          <li class="link-btn">
-            <button class="button-port" type="button">Дизайн</button>
+          <li class="buttons__link">
+            <button class="buttons__btn" type="button">Дизайн</button>
           </li>
-          <li class="link-btn">
-            <button class="button-port" type="button">Маркетинг</button>
+          <li class="buttons__link">
+            <button class="buttons__btn" type="button">Маркетинг</button>
           </li>
         </ul>
       </div>
       <div class="container">
-        <ul class="content-li">
-          <li class="item-cards">
-            <div class="box">
+        <ul class="content__cards--list">
+          <li class="content__cards--item">
+            <div class="content__cards--box">
               <img src="./images/technocrack.jpg" alt="Технокряк" width="370" />
-              <div class="overlay">
+              <div class="content__cards--overlay">
                 <p>
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для
@@ -82,15 +83,15 @@
                 </p>
               </div>
             </div>
-            <div class="content-card">
-              <h2 class="titles-port">Технокряк</h2>
-              <p class="category-port">Веб-сайты</p>
+            <div class="card">
+              <h2 class="card__title">Технокряк</h2>
+              <p class="card__category">Веб-сайты</p>
             </div>
           </li>
-          <li class="item-cards">
-            <div class="box">
+          <li class="content__cards--item">
+            <div class="content__cards--box">
               <img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
-              <div class="overlay">
+              <div class="content__cards--overlay">
                 <p>
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для
@@ -98,15 +99,15 @@
                 </p>
               </div>
             </div>
-            <div class="content-card">
-              <h2 class="titles-port">Постер New Orlean vs Golden Star</h2>
-              <p class="category-port">Дизайн</p>
+            <div class="card">
+              <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
+              <p class="card__category">Дизайн</p>
             </div>
           </li>
-          <li class="item-cards">
-            <div class="box">
+          <li class="content__cards--item">
+            <div class="content__cards--box">
               <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370" />
-              <div class="overlay">
+              <div class="content__cards--overlay">
                 <p>
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для
@@ -114,51 +115,51 @@
                 </p>
               </div>
             </div>
-            <div class="content-card">
-              <h2 class="titles-port">Ресторан Seafood</h2>
-              <p class="category-port">Приложение</p>
+            <div class="card">
+              <h2 class="card__title">Ресторан Seafood</h2>
+              <p class="card__category">Приложение</p>
             </div>
           </li>
-          <li class="item-cards">
+          <li class="content__cards--item">
             <img src="./images/prime.jpg" alt="Проект Prime" width="370" />
-            <div class="content-card">
-              <h2 class="titles-port">Проект Prime</h2>
-              <p class="category-port">Маркетинг</p>
+            <div class="card">
+              <h2 class="card__title">Проект Prime</h2>
+              <p class="card__category">Маркетинг</p>
             </div>
           </li>
-          <li class="item-cards">
+          <li class="content__cards--item">
             <img src="./images/boxes.jpg" alt="Проект Boxes" width="370" />
-            <div class="content-card">
-              <h2 class="titles-port">Проект Boxes</h2>
-              <p class="category-port">Приложение</p>
+            <div class="card">
+              <h2 class="card__title">Проект Boxes</h2>
+              <p class="card__category">Приложение</p>
             </div>
           </li>
-          <li class="item-cards">
+          <li class="content__cards--item">
             <img src="./images/inspirationhasnoborders.jpg" alt="Inspiration has no Borders" width="370" />
-            <div class="content-card">
-              <h2 class="titles-port">Inspiration has no Borders</h2>
-              <p class="category-port">Веб-сайты</p>
+            <div class="card">
+              <h2 class="card__title">Inspiration has no Borders</h2>
+              <p class="card__category">Веб-сайты</p>
             </div>
           </li>
-          <li class="item-cards">
+          <li class="content__cards--item">
             <img src="./images/limitededition.jpg" alt="Издание Limited Edition" width="370" />
-            <div class="content-card">
-              <h2 class="titles-port">Издание Limited Edition</h2>
-              <p class="category-port">Дизайн</p>
+            <div class="card">
+              <h2 class="card__title">Издание Limited Edition</h2>
+              <p class="card__category">Дизайн</p>
             </div>
           </li>
-          <li class="item-cards">
+          <li class="content__cards--item">
             <img src="./images/lab.jpg" alt="Проект LAB" width="370" />
-            <div class="content-card">
-              <h2 class="titles-port">Проект LAB</h2>
-              <p class="category-port">Маркетинг</p>
+            <div class="card">
+              <h2 class="card__title">Проект LAB</h2>
+              <p class="card__category">Маркетинг</p>
             </div>
           </li>
-          <li class="item-cards">
+          <li class="content__cards--item">
             <img src="./images/growingbusiness.jpg" alt="Growing Business" width="370" />
-            <div class="content-card">
-              <h2 class="titles-port">Growing Business</h2>
-              <p class="category-port">Приложение</p>
+            <div class="card">
+              <h2 class="card__title">Growing Business</h2>
+              <p class="card__category">Приложение</p>
             </div>
           </li>
         </ul>
@@ -167,58 +168,73 @@
   </main>
 
   <!-- Подвал-->
-  <footer>
-    <div class="footer-design">
-      <div class="footer-container">
-        <a class="logo-footer" href="./index.html">
-          <span class="web-part">Web</span><span class="web-footer">Studio</span></a>
+  <footer class="footer">
+    <div class="footer__design container">
+  
+      <div class="footer__container">
+        <a class="footer__logo" href="./index.html">
+          <span class="footer__logo--web">Web</span><span class="footer__logo--studio">Studio</span></a>
         <address>
           <ul class="footer-nav">
-            <li class="item">
-              <a class="link-address" href="г.Киев,пр-т-Леси-Украинки,26">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link--address" href="г.Киев,пр-т-Леси-Украинки,26">
                 г. Киев, пр-т Леси Украинки, 26</a>
             </li>
-            <li class="item">
-              <a class="link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link--contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-
-            <li class="item">
-              <a class="link-footer" href="tel:+380961111111">+38 096 111 11 11</a>
+  
+            <li class="footer-nav__item">
+              <a class="footer-nav__link--contact" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>
       </div>
-      <div class="footer-block1">
-        <h2 class="title-footer">Присоединяйтесь</h2>
-        <ul class="footer-socials">
-          <li class="footer-social-item">
-            <a href="#" class="footer-social-links">
-              <svg class="instagram" width="20" height="20">
+      <div class="join">
+        <h2 class="join__title">Присоединяйтесь</h2>
+        <ul class="join__list">
+          <li class="join__item">
+            <a href="#" class="join__link">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg></a>
           </li>
-          <li class="footer-social-item">
-            <a href="#" class="footer-social-links">
-              <svg class="bird" width="20" height="20">
+          <li class="join__item">
+            <a href="#" class="join__link">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-bird"></use>
               </svg></a>
           </li>
-          <li class="footer-social-item">
-            <a href="#" class="footer-social-links">
-              <svg class="facebook" width="20" height="20">
+          <li class="join__item">
+            <a href="#" class="join__link">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg></a>
           </li>
-          <li class="footer-social-item">
-            <a href="#" class="footer-social-links">
-              <svg class="linkedin" width="20" height="20">
+          <li class="join__item">
+            <a href="#" class="join__link">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg></a>
           </li>
         </ul>
       </div>
+      <div class="form">
+        <form>
+          <h2 class="form__title">Подпишитесь на рассылку</h2>
+          <div class="form__button">
+            <input class="form__input" type="text" name="email" placeholder="E-mail" />
+            <button type="submit" class="form__btn">
+              Подписаться
+              <svg class="form__icon--send" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-  </footer>
+    </footer>
 </body>
 
 </html>
