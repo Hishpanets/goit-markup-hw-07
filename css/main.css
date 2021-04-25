@@ -69,20 +69,6 @@ p {
   padding: 0;
 }
 
-.page-header {
-  border-bottom: 1px solid #ececec;
-  min-height: 80px;
-}
-
-.site-nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .site-nav__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,6 +90,20 @@ p {
 
 .logo__secword {
   color: #000000;
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+  min-height: 80px;
+}
+
+.site-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .site-nav__list {
